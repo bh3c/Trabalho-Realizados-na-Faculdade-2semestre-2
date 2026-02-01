@@ -1,0 +1,236 @@
+body{
+    padding: 2px;
+    margin: solid black 5px;
+    border: 5px solid black;
+    background-color: 	#ffffff;
+}
+
+#container{
+    max-width: 2100px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid orange;
+}
+
+
+main, header, section, article, aside, footer, nav{
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid black;
+    
+}
+
+.banner{
+    margin: 10px;
+    padding: 10px;
+    background-image: url(Imagensparasite/383056_946718_stock_londrina_duda_bairros_08-crop-1600031003-1280x438.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+nav li{
+    display: inline-block; 
+  margin: 5px;           
+  padding: 10px 15px;  
+  background: #ff0000;   
+  
+  border: 1px solid #ff0000;
+}
+nav a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    gap: 10px;
+  flex-wrap: wrap;
+}
+nav a :hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.tema{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.caixa{
+    width: 255px;
+    padding: 30px;
+}
+
+.carousel {
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  width: 120%;  
+  max-width: 100%;       
+  
+  height: auto;         
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  display: flex;           
+  justify-content: center;
+  align-items: center;     
+  background-color: #000;  
+}
+
+
+.carousel img {
+  width: 100%;
+  height: 100%; ;
+  max-width: 100%;
+  object-fit: cover;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease;
+  opacity: 0;
+  justify-self: center;
+  align-self: center ;
+}
+
+.carousel img.active {  
+  display: block;
+  opacity: 1;
+}
+
+
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+
+.accordion-header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #555;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  position: relative; 
+}
+        
+.accordion-header:hover {
+ background-color: #555;
+}
+
+.accordion-content {
+ padding: 0 15px;
+ background-color: #f4f4f4;
+ max-height: 0; 
+ overflow: hidden; 
+ transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; 
+ text-align: left;
+        }
+        
+
+.accordion-content.active {
+ max-height: 200px; 
+ padding: 15px; 
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border: 3px solida pink;
+    margin: 5px;
+}
+th, td { border: 1px solid #444; padding: 6px; text-align: center; color: red; }
+thead th { background: pink; }  
+
+form button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  gap: 200px ;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+}
+
+fieldset{
+  font-size: 25px;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode main,
+body.dark-mode section,
+body.dark-mode article,
+body.dark-mode aside {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #333;
+}
+
+
+#modoEscuroBtn {
+  position: absolute;
+  top: 80px;
+  right: 86px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#modoEscuroBtn:hover {
+  background-color: #333;
+}
